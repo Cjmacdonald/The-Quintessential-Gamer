@@ -13,7 +13,7 @@ echo "<br><br>";
 echo ("COMING SOON!");
 
 echo "<br><br>";
-echo nl2br("Here you will find:\r\n-An about mee \r\n -My personal social medial
+echo nl2br("Here you will find:\r\n-An about me \r\n -My personal social medial
             \r\n -My Store \r\n -Stream Schedule");
      ?>
 
