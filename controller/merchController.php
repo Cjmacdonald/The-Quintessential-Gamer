@@ -56,7 +56,7 @@ class merchController {
 
                         <tr>
                             <th>Roast: </th>
-                            <td>$merch->roast</td>
+                            <td>$merch->size</td>
                         </tr>
 
                         <tr>

@@ -7,30 +7,30 @@ class storeModel {
     function GetMerchTypes() {
         require 'credentials.php';
 
-        mysql_connect($host, $user, $passwd) or die(mysql_error());
-        mysql_select_db($database);
-        $result = mysql_query("SELECT DISTINCT type FROM merch") or die(mysql_error());
+        mysqli_connect($host, $user, $passwd) or die(mysqli_error());
+        mysqli_select_db($database);
+        $result = mysqli_query("SELECT DISTINCT type FROM merch") or die(mysqli_error());
         $types = array();
 
-        while ($row = mysql_fetch_array($result)) {
+        while ($row = mysqli_fetch_array($result)) {
             array_push($types, $row[0]);
         }
 
-        mysql_close();
+        mysqli_close();
         return $types;
     }
 
     function GetMerchByType($type) {
         require 'credentials.php';
 
-        mysql_connect($host, $user, $passwd) or die(mysql_error);
-        mysql_select_db($database);
+        mysqli_connect($host, $user, $passwd) or die(mysqli_error);
+        mysqli_select_db($database);
 
         $query = "SELECT * FROM merch WHERE type LIKE '$type'";
-        $result = mysql_query($query) or die(mysql_error());
+        $result = mysqli_query($query) or die(mysqli_error());
         $merchArray = array();
 
-        while ($row = mysql_fetch_array($result)) {
+        while ($row = mysqli_fetch_array($result)) {
             $name = $row[1];
             $type = $row[2];
             $price = $row[3];
@@ -41,7 +41,7 @@ class storeModel {
             $merch = new storeEntity(-1, $name, $type, $price, $size, $image, $review);
             array_push($merchArray, $merch);
         }
-        mysql_close();
+        mysqli_close();
         return $merchArray;
     }
 

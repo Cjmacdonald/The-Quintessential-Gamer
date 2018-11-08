@@ -4,7 +4,7 @@ HOW TO RUN VIA WEB SERVER:
 -first open vanilla CMD
 -the type "php -S localhost:4000"
 -Then when you type into browser....
-"http://localhost:4000/The_quintessential_gamer/template.php"
+"http://localhost:4000/The_quintessential_gamer/index.php"
 
 
 
