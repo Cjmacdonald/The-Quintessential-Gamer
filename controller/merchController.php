@@ -58,12 +58,6 @@ class merchController {
                             <th>Roast: </th>
                             <td>$merch->size</td>
                         </tr>
-
-                        <tr>
-                            <th>Origin: </th>
-                            <td>$merch->country</td>
-                        </tr>
-
                         <tr>
                             <td colspan='2' >$merch->review</td>
                         </tr>

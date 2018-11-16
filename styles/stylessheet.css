@@ -6,7 +6,7 @@ body
 
 body p
 {
-  font-size: 0.8em;
+  font-size: 0.95em;
   line-height: 1.28;
 }
 
@@ -21,12 +21,12 @@ body p
 
 #banner
 {
-  background-image: url(../images/banner.jpg);
+  background-image: url(../images//header&footer/banner.jpg);
   border: 5px solid #dedede;
   background-size: cover;
   height: 250px;
   color: #ff9c00;
-  font-size: 40px;
+  font-size: 37px;
   position: relative;
 }
 
@@ -55,6 +55,27 @@ body p
   padding: 10px;
 }
 
+
+#content_area a:link, a:active, a:visited
+{
+  text-decoration: none;
+}
+
+#content_area a:link, a:visited
+{
+  color: darkorange;
+}
+
+#content_area a:link a:active
+{
+  color: orange;
+}
+
+#content_area a:hover
+{
+  color: blue;
+}
+
 #sidebar
 {
   float: right;
@@ -75,7 +96,7 @@ footer
   text-align: center;
   color: #fff;
   text-shadow: 0.1em 0.1em #333;
-  background-image: url(../images/footer.png);
+  background-image: url(../images/header&footer/footer.png);
 }
 
 #navigation
@@ -123,20 +144,73 @@ footer
   color: lightblue;
 }
 
-.imgLeft
+.gifLeft
 {
     float: left;
-    width: 240px;
-    height: 150px;
+    width: 350px;
+    height: 200px;
     margin: 0px 10px 10px 0;
+    padding: 10px;
+}
+.gif2Left
+{
+    float: left;
+    width: 340px;
+    height: 200px;
+    margin: 0px 10px 10px 0;
+    padding: 10px;
+}
+
+.gifRight
+{
+    float: right;
+    width: 340px;
+    height: 250px;
+    margin: 0px 0 10px 10px;
+    padding: 10px;
+}
+
+.gif2Right
+{
+    float: right;
+    width: 340px;
+    height: 250px;
+    margin: 0px 0 10px 10px;
     padding: 10px;
 }
 
 .imgRight
 {
     float: right;
-    width: 200px;
+    width: 300px;
     height: 250px;
     margin: 0px 0 10px 10px;
     padding: 10px;
+}
+
+.imgLeftFM
+{
+    float: center;
+    width: 45px;
+    height: 45px;
+    margin: 0px 10px 10px 0;
+    padding: 10px;
+}
+
+.gifLeftAM
+{
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin: 0px 10px 10px 0;
+    padding: 10px;
+}
+
+.imgLeftAM
+{
+  float: left;
+  width: 175px;
+  height: 250px;
+  margin: 0px 10px 10px 0;
+  padding: 10px;
 }
