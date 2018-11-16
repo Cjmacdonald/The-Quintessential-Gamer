@@ -4,7 +4,7 @@ $content =
 
 
 '
-
+<h3><center><font size = 45><font color = "3E72F3"><u>Recent Reviews!</u></font></font></center></h3>
 <img src="images/index/IMGLeft.gif" class="gifLeft" />
 <h3><font color = "3E72F3">Red Dead Redemption 2 (Review) </font></h3>
 <p>

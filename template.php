@@ -13,20 +13,20 @@
         </div>
 
         <nav id="navigation">
+
           <ul id="nav">
             <li><a href="index.php">Home</a></li>
             <li><a href="schedule.php">Schedule</a></li>
             <li><a href="merch.php">Store</a></li>
             <li><a href="followMe.php">Follow Me</a></li>
             <li><a href="aboutMe.php">About Me</a></li>
+            <li><a href="login/loginPage.php">Login</a></li>
+
           </ul>
         </nav>
 
         <div id="content_area">
           <?php echo $content; ?>
-        </div>
-
-        <div id="sidebar">
         </div>
 
         <footer>

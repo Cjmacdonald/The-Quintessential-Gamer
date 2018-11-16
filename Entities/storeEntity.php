@@ -15,7 +15,7 @@ class storeEntity
         $this->name = $name;
         $this->type = $type;
         $this->price = $price;
-        $this->roast = $size;
+        $this->size = $size;
         $this->image = $image;
         $this->review = $review;
     }

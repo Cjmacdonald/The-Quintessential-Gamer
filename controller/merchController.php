@@ -50,17 +50,21 @@ class merchController {
                         </tr>
 
                         <tr>
-                            <th>Price: </th>
-                            <td>$merch->price</td>
+                            <th>Price:</th>
+                            <td> $$merch->price .00 + Shipping</td>
+
                         </tr>
 
                         <tr>
-                            <th>Roast: </th>
+                            <th>Size: </th>
                             <td>$merch->size</td>
                         </tr>
+
                         <tr>
+                            <th>Review:</th>
                             <td colspan='2' >$merch->review</td>
                         </tr>
+                    
                      </table>";
         }
         return $result;
