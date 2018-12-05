@@ -51,7 +51,7 @@
 		</div>
 		<div class="content">
 			<form  method="POST" action="loginPage.php">
-				<h3><font color = "3E72F3"><font size = 45><center>Login system</center></font></font></h3>
+				<h3><font color = "3E72F3"><font size = 45><center>Sign up system</center></font></font></h3>
 				<table>
 					<tr>
 						<td>Your Email</td>
