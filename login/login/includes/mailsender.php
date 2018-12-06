@@ -7,7 +7,7 @@ class MailSender
         include 'config.php';
 
         $finishedtext = $active_email;
-        $verifyurl = substr($base_url . $_SERVER['PHP_SELF'], 0, -strlen(basename($_SERVER['PHP_SELF']))) . "verifyuser.php?v=1&uid=" . $id;
+        $verifyurl = "/The_quintessential_gamer/index.php?";
 
         $mail = new PHPMailer;
         $mail->isHTML(true);

@@ -15,7 +15,7 @@
         <nav id="navigation">
 
           <ul id="nav">
-            <li><a href="index.php">Home</a></li>
+            <li><center><a href="index.php">Home</a></center></li>
             <li><a href="schedule.php">Major Releases</a></li>
             <li><center><a href="merch.php">Store</a></center></li>
             <li><a href="followMe.php">Follow Me</a></li>
