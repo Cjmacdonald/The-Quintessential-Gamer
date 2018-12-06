@@ -21,4 +21,5 @@ $smtp_security = 'ssl';
 
 
 $verifymsg = 'Click this link to view your monthly Newsletter!';
+$active_email = 'Your new account is now active! Click this link to log in!';
 $signupthanks = 'Thank you for signing up! You will receive an email shortly confirming the verification of your account.';
