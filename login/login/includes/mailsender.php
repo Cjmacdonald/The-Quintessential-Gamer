@@ -7,7 +7,7 @@ class MailSender
         include 'config.php';
 
         $finishedtext = $active_email;
-        $verifyurl = "/The_quintessential_gamer/index.php?";
+        $verifyurl = "http://localhost:4000/The_quintessential_gamer/index.php";
 
         $mail = new PHPMailer;
         $mail->isHTML(true);
