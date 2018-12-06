@@ -2,7 +2,7 @@
 require 'includes/functions.php';
 include_once 'config.php';
 
-//Generates new ID/Hash password
+//Generates new ID/password hash
 $newid = uniqid(rand(), false);
 $newuser = $_POST['newuser'];
 $newpw = password_hash($_POST['password1'], PASSWORD_DEFAULT);
