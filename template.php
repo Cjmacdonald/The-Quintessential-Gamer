@@ -16,8 +16,8 @@
 
           <ul id="nav">
             <li><a href="index.php">Home</a></li>
-            <li><a href="schedule.php">Release Schedule</a></li>
-            <li><a href="merch.php">Store</a></li>
+            <li><a href="schedule.php">Major Releases</a></li>
+            <li><center><a href="merch.php">Store</a></center></li>
             <li><a href="followMe.php">Follow Me</a></li>
             <li><a href="aboutMe.php">About Me</a></li>
             <li><a href="login/login/signup.php">Sign up</a></li>
