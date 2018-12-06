@@ -36,16 +36,17 @@ if ($pw1 != $pw2) {
 
 
         $a = new NewUserForm;
-
+        //finishes storing new userdata in db
         $response = $a->createUser($newuser, $newid, $newemail, $newpw);
 
         if ($response == 'true') {
 
             echo '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>'. $signupthanks .'</div><div id="returnVal" style="display:none;">true</div>';
-
+            //Sends Verification email
             $m = new MailSender;
             $m->sendMail($newemail, $newuser, $newid, 'Verify');
 
+        //if errors
         } else {
             mySqlErrors($response);
 

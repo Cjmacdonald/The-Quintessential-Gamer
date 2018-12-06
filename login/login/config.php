@@ -2,18 +2,21 @@
 include 'globalcon.php';
 include 'dbconf.php';
 $site_name = 'Test Site';
-//login timeout
+//login limit/timeout
 $max_attempts = 5;
 $login_timeout = 300;
 
 $from_email = 'cambin094@gmail.com';
 $from_name = 'Welcome to The Quintessential Gamer Newsletter';
 
+//Email settings
 $mailServerType = 'smtp';
 $smtp_server = 'smtp.gmail.com';
+
+//Email server settings
 $smtp_user = 'cambino094@gmail.com';
 $smtp_pw = 'Nothing0';
-$smtp_port = 465; 
+$smtp_port = 465;
 $smtp_security = 'ssl';
 
 
