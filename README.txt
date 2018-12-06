@@ -24,7 +24,7 @@ Presentations:
 
 
 
-storedb code
+-- --------------------------------------------------------
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
@@ -54,10 +54,12 @@ CREATE TABLE IF NOT EXISTS `store` (
   `review` text,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
- 
+
 --
 -- Data is performed for table `store`
 --
+
+-- --------------------------------------------------------
 
 INSERT INTO `store` (`id`, `name`, `type`, `price`, `size`, `image`, `review`) VALUES
 (1, 'Pullover', 'hoodie', 60.00, 'FITS ALL', 'images/store/hood1.jpg', 'Keeps you warm when your too busy to turn the heat on.'')'),
@@ -68,3 +70,26 @@ INSERT INTO `store` (`id`, `name`, `type`, `price`, `size`, `image`, `review`) V
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+-- --------------------------------------------------------
+CREATE TABLE `members` (
+  `id` char(23) NOT NULL,
+  `username` varchar(65) NOT NULL DEFAULT '',
+  `password` varchar(65) NOT NULL DEFAULT '',
+  `email` varchar(65) NOT NULL,
+  `verified` tinyint(1) NOT NULL DEFAULT '0',
+  `mod_timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username_UNIQUE` (`username`),
+  UNIQUE KEY `id_UNIQUE` (`id`),
+  UNIQUE KEY `email_UNIQUE` (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+-- --------------------------------------------------------
+CREATE TABLE `loginAttempts` (
+  `IP` varchar(20) NOT NULL,
+  `Attempts` int(11) NOT NULL,
+  `LastLogin` datetime NOT NULL,
+  `Username` varchar(65) DEFAULT NULL,
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

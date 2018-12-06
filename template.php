@@ -20,7 +20,7 @@
             <li><a href="merch.php">Store</a></li>
             <li><a href="followMe.php">Follow Me</a></li>
             <li><a href="aboutMe.php">About Me</a></li>
-            <li><a href="login/loginPage.php">Login</a></li>
+            <li><a href="login/login/signup.php">Sign up</a></li>
 
           </ul>
         </nav>
